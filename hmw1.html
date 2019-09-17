@@ -10,7 +10,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
 
 
-<meta name="author" content="test" />
+<meta name="author" content="Alex Schroeter, Rita Sefraoui, Leonard Philipossian, Simon Fornerod, David Pitteloud" />
 
 
 <title>hmw1</title>
@@ -190,98 +190,17 @@ window.buildTabsets = function(tocID) {
 };
 
 </script>
-
-
-<style type="text/css">code{white-space: pre;}</style>
-<style type="text/css" data-origin="pandoc">
-a.sourceLine { display: inline-block; line-height: 1.25; }
-a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
-a.sourceLine:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode { white-space: pre; position: relative; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-code.sourceCode { white-space: pre-wrap; }
-a.sourceLine { text-indent: -1em; padding-left: 1em; }
-}
-pre.numberSource a.sourceLine
-  { position: relative; left: -4em; }
-pre.numberSource a.sourceLine::before
-  { content: attr(title);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; pointer-events: all; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-    color: #aaaaaa;
-  }
-pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
-div.sourceCode
-  { background-color: #f8f8f8; }
-@media screen {
-a.sourceLine::before { text-decoration: underline; }
-}
-code span.al { color: #ef2929; } /* Alert */
-code span.an { color: #8f5902; font-weight: bold; font-style: italic; } /* Annotation */
-code span.at { color: #c4a000; } /* Attribute */
-code span.bn { color: #0000cf; } /* BaseN */
-code span.cf { color: #204a87; font-weight: bold; } /* ControlFlow */
-code span.ch { color: #4e9a06; } /* Char */
-code span.cn { color: #000000; } /* Constant */
-code span.co { color: #8f5902; font-style: italic; } /* Comment */
-code span.cv { color: #8f5902; font-weight: bold; font-style: italic; } /* CommentVar */
-code span.do { color: #8f5902; font-weight: bold; font-style: italic; } /* Documentation */
-code span.dt { color: #204a87; } /* DataType */
-code span.dv { color: #0000cf; } /* DecVal */
-code span.er { color: #a40000; font-weight: bold; } /* Error */
-code span.ex { } /* Extension */
-code span.fl { color: #0000cf; } /* Float */
-code span.fu { color: #000000; } /* Function */
-code span.im { } /* Import */
-code span.in { color: #8f5902; font-weight: bold; font-style: italic; } /* Information */
-code span.kw { color: #204a87; font-weight: bold; } /* Keyword */
-code span.op { color: #ce5c00; font-weight: bold; } /* Operator */
-code span.ot { color: #8f5902; } /* Other */
-code span.pp { color: #8f5902; font-style: italic; } /* Preprocessor */
-code span.sc { color: #000000; } /* SpecialChar */
-code span.ss { color: #4e9a06; } /* SpecialString */
-code span.st { color: #4e9a06; } /* String */
-code span.va { color: #000000; } /* Variable */
-code span.vs { color: #4e9a06; } /* VerbatimString */
-code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warning */
-
-</style>
-<script>
-// apply pandoc div.sourceCode style to pre.sourceCode instead
-(function() {
-  var sheets = document.styleSheets;
-  for (var i = 0; i < sheets.length; i++) {
-    if (sheets[i].ownerNode.dataset["origin"] !== "pandoc") continue;
-    try { var rules = sheets[i].cssRules; } catch (e) { continue; }
-    for (var j = 0; j < rules.length; j++) {
-      var rule = rules[j];
-      // check if there is a div.sourceCode rule
-      if (rule.type !== rule.STYLE_RULE || rule.selectorText !== "div.sourceCode") continue;
-      var style = rule.style.cssText;
-      // check if color or background-color is set
-      if (rule.style.color === '' && rule.style.backgroundColor === '') continue;
-      // replace div.sourceCode by a pre.sourceCode rule
-      sheets[i].deleteRule(j);
-      sheets[i].insertRule('pre.sourceCode{' + style + '}', j);
+<script>$(document).ready(function(){
+    if (typeof $('[data-toggle="tooltip"]').tooltip === 'function') {
+        $('[data-toggle="tooltip"]').tooltip();
     }
-  }
-})();
+    if ($('[data-toggle="popover"]').popover === 'function') {
+        $('[data-toggle="popover"]').popover();
+    }
+});
 </script>
-<style type="text/css">
-  pre:not([class]) {
-    background-color: white;
-  }
-</style>
+
+
 
 
 <style type="text/css">
@@ -419,33 +338,81 @@ summary {
 
 
 <h1 class="title toc-ignore">hmw1</h1>
-<h4 class="author">test</h4>
+<h4 class="author">Alex Schroeter, Rita Sefraoui, Leonard Philipossian, Simon Fornerod, David Pitteloud</h4>
 <h4 class="date">17 septembre, 2019</h4>
 
 </div>
 
+<div id="TOC">
+<ul>
+<li><a href="#introduction"><span class="toc-section-number">1</span> Introduction</a></li>
+<li><a href="#group-members"><span class="toc-section-number">2</span> Group Members</a><ul>
+<li><a href="#alex-schroeter"><span class="toc-section-number">2.1</span> Alex Schroeter</a></li>
+<li><a href="#leonard-philippossian"><span class="toc-section-number">2.2</span> Leonard Philippossian</a></li>
+<li><a href="#rita-sefraoui"><span class="toc-section-number">2.3</span> Rita Sefraoui</a></li>
+<li><a href="#simon-fornerod"><span class="toc-section-number">2.4</span> Simon Fornérod</a></li>
+<li><a href="#david-pitteloud"><span class="toc-section-number">2.5</span> David Pitteloud</a></li>
+</ul></li>
+</ul>
+</div>
 
 <div id="introduction" class="section level1">
-<h1>Introduction</h1>
-<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb1-1" title="1"><span class="st">&quot;This homework&quot;</span></a></code></pre></div>
-<pre><code>## [1] &quot;This homework&quot;</code></pre>
+<h1><span class="header-section-number">1</span> Introduction</h1>
 </div>
 <div id="group-members" class="section level1">
-<h1>Group Members</h1>
+<h1><span class="header-section-number">2</span> Group Members</h1>
 <div id="alex-schroeter" class="section level2">
-<h2>Alex Schroeter</h2>
+<h2><span class="header-section-number">2.1</span> Alex Schroeter</h2>
 </div>
 <div id="leonard-philippossian" class="section level2">
-<h2>Leonard Philippossian</h2>
+<h2><span class="header-section-number">2.2</span> Leonard Philippossian</h2>
 </div>
 <div id="rita-sefraoui" class="section level2">
-<h2>Rita Sefraoui</h2>
+<h2><span class="header-section-number">2.3</span> Rita Sefraoui</h2>
 </div>
 <div id="simon-fornerod" class="section level2">
-<h2>Simon Fornérod</h2>
+<h2><span class="header-section-number">2.4</span> Simon Fornérod</h2>
 </div>
 <div id="david-pitteloud" class="section level2">
-<h2>David Pitteloud</h2>
+<h2><span class="header-section-number">2.5</span> David Pitteloud</h2>
+<table class="table" style="width: auto !important; margin-left: auto; margin-right: auto;">
+<thead>
+<tr>
+<th style="text-align:left;">
+Subject
+</th>
+<th style="text-align:left;">
+Features
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;font-weight: bold;border-right:1px solid;">
+Supply chain and its latest trend
+</td>
+<td style="text-align:left;background-color: lightblue !important;border-left:1px solid;">
+Monday 2pm-6pm
+</td>
+</tr>
+<tr>
+<td style="text-align:left;font-weight: bold;border-right:1px solid;">
+Programming tools
+</td>
+<td style="text-align:left;background-color: lightblue !important;border-left:1px solid;">
+Tuesday 8am-12am
+</td>
+</tr>
+<tr>
+<td style="text-align:left;font-weight: bold;border-right:1px solid;">
+Project in Data Analytics
+</td>
+<td style="text-align:left;background-color: lightblue !important;border-left:1px solid;">
+Friday 8am-12am
+</td>
+</tr>
+</tbody>
+</table>
 </div>
 </div>
 

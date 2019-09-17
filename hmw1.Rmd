@@ -1,9 +1,12 @@
 ---
 title: "hmw1"
-author: "test"
+author: "Alex Schroeter, Rita Sefraoui, Leonard Philipossian, Simon Fornerod, David Pitteloud"
 date: "`r format(Sys.time(), '%d %B, %Y')`"
 output: 
     html_document:
+        toc: True
+        toc_depth: 3 
+        number_sections: true
         theme: cerulean
         highlight: tango
 
@@ -13,14 +16,13 @@ output:
 # Introduction
 
 
-```{r, }
+```{r, include=FALSE}
 
 library(knitr)
 library(tidyverse)
 library(dplyr)
 library(tidyr)
-library(kable)
-"This homework"
+library(kableExtra)
 ```
 
 
@@ -29,47 +31,48 @@ library(kable)
 ## Alex Schroeter
 
 ```{r, }
-"This homework"
+
 ```
 
 ## Leonard Philippossian
 
 ```{r, }
-"This homework"
+
 ```
 
 ## Rita Sefraoui
 
 ```{r, }
-"This homework"
+
 ```
 
 ## Simon Fornérod
 
 ```{r, }
-"This homework"
+
 ```
+
 
 ## David Pitteloud
 
 ```{r, }
-"This homework"
+
 ```
 
-```{r,}
+```{r, echo=FALSE}
 text_tbl <- data.frame(
-  Items = c("Item 1", "Item 2", "Item 3"),
+  Subject = c("Supply chain and its latest trend", "Programming tools", "Project in Data Analytics"),
   Features = c(
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vehicula tempor ex. Morbi malesuada sagittis turpis, at venenatis nisl luctus a. ",
-    "In eu urna at magna luctus rhoncus quis in nisl. Fusce in velit varius, posuere risus et, cursus augue. Duis eleifend aliquam ante, a aliquet ex tincidunt in. ", 
-    "Vivamus venenatis egestas eros ut tempus. Vivamus id est nisi. Aliquam molestie erat et sollicitudin venenatis. In ac lacus at velit scelerisque mattis. "
+    " Monday 2pm-6pm ",
+    "Tuesday 8am-12am", 
+    "Friday 8am-12am"
   )
 )
 
 kable(text_tbl) %>%
   kable_styling(full_width = F) %>%
   column_spec(1, bold = T, border_right = T) %>%
-  column_spec(2, width = "30em", background = "yellow")
+  column_spec(2, border_left = T, background = "lightblue")
 
 ```
 
