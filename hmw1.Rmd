@@ -9,6 +9,7 @@ output:
         number_sections: true
         theme: cerulean
         highlight: tango
+bibliography: bibliography.bibTex
 
 ---
 
@@ -55,9 +56,17 @@ library(kableExtra)
 
 ## David Pitteloud
 
+![](images/Capture.png)
+
 ```{r, }
 
 ```
+
+
+```{r, }
+"My favorite quote is : The moutainmen leaves his village but his village never leaves him"
+```
+
 
 ```{r, echo=FALSE}
 text_tbl <- data.frame(
@@ -75,4 +84,6 @@ kable(text_tbl) %>%
   column_spec(2, border_left = T, background = "lightblue")
 
 ```
+
+
 
